@@ -1,0 +1,49 @@
+//Header Modification
+#masthead {
+    background: $brown-dark;
+    height: 90px;
+    border-bottom:3px solid $taupe;
+}
+
+.custom-logo-link > img{
+  width: clamp(200px,14vw,252px);
+  height: auto;
+  padding: 0;
+  margin-right: 0;
+}
+
+//"Site Navigation icon Hover"
+#site-navigation .uk-navbar-right .uk-iconnav > li, 
+.footer-content .uk-iconnav > li{
+  aspect-ratio: 1 / 1;
+  padding:3px;
+  border:1px solid $brown-dark;
+  margin-left: 3px;
+  }
+#site-navigation .uk-navbar-right .uk-iconnav > li:hover,
+.footer-content .uk-iconnav > li:hover{
+  background-color: $orange-dark;
+  border:1px solid #fff;
+}
+
+// "More Menus" Animation
+#site-navigation .more-menu > a > svg > circle {
+   transition: transform .075s ease-out;
+   transform-origin: center;
+}
+#site-navigation .more-menu:hover > a > svg > circle:nth-child(1){
+  transform:translate(8px , 14px);
+}
+#site-navigation .more-menu:hover > a > svg > circle:nth-child(2){
+  transform:translate(-8px , 7px);
+}
+#site-navigation .more-menu:hover > a > svg > circle:nth-child(3){
+  transform:translate(0px , -14px);
+}
+
+
+@media (min-width: 1400px){
+  #site-navigation{
+    padding: 0;
+  }
+}

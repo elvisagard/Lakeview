@@ -1,0 +1,124 @@
+//
+// Component: Event Component 
+//
+// ========================================================================
+
+// REFERENCE Modify default Events Manager plugin styles
+// -------------------------------------------------------------------------
+
+//Responsive text-sizing
+//@include rsp-text($sm: 0, $md: 0, $lg: 0, $xl: 0);
+
+//Responsive line-height-sizing
+//@include rsp-line-height($sm: 0, $md: 0, $lg: 0, $xl: 0);
+
+// Dividers
+// @include div("top");
+// @include div("top",#ccc);
+
+// -------------------------------------------------------------------------
+
+@use "../_partials";
+
+.em.em-view-container{
+    @extend .uk-container;
+} 
+
+.em-item-image > img{
+    max-height: 275px;
+    object-fit: cover;
+}
+
+.em-item-meta-column > .em-location-next-event > h1, .em.pixelbones > h1{
+    font-weight: 700 !important;
+}
+
+.lv-cal-buttons{
+    font-family: $font-notosans;
+}
+
+@mixin event-accent($accent-color){
+    & > div > span,.date {
+        background: $accent-color;
+        width:50px;
+        font-family: $font-notomono;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #fff;
+        padding: 5px 7px;
+        border-radius: 4px;
+        font-size:0.8rem;
+        text-align: center;
+    }
+    ul.lv-cal-buttons > li > a{
+        color: $accent-color;
+    }
+    h3 > a{
+        color: $brown-dark;
+        //width: 25ch;
+        //white-space: nowrap;
+        //overflow: hidden;
+        //text-overflow: ellipsis;
+    }
+    a[title]{
+        @extend .uk-button;
+        border: 2px solid white !important;
+        background-color: $accent-color;
+        color: white !important;
+        
+    }
+}
+
+.lv-event-green{@include event-accent($green-dark);}
+.lv-event-red{@include event-accent($red-dark);}
+
+
+article[id^="lv-events"]{
+    .em-item-info{
+        margin: -5px 0 0 7px;
+    }
+    .em-event.em-item{
+        margin-bottom:3px;
+        display: flex;
+        align-items: center;
+        & *{
+            line-height: 1;
+        }
+    }
+    .em-item-image-placeholder{
+        display:flex;
+        justify-content: center;
+    }
+    .date{
+        display: flex;
+        justify-content: center;
+        .day{
+            order:2;
+            margin-left:5px;
+        }
+    }
+    .em-event-meta.em-item-meta,.em-item-desc,.em-item-actions.input{
+        display:none;
+    }
+    h3.em-item-title{
+        font-family: $font-notoserif;
+        margin:0;
+        width: min(160px,50vw);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        & > a{
+        font-size:1rem;
+        font-weight:400;   
+        }
+        @media (min-width: 1400px){
+            width: min(230px,50vw);
+        }
+    }
+}
+
+.show-events-button{display:none;}
+@media (min-width: 782px) and (max-width: $breakpoint-large){
+    .hide-events,.hide-news{display:none !important;}
+    .show-events-button {display:flex;}
+}

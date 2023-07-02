@@ -1,0 +1,33 @@
+@mixin slider-style($given-bg,$given-accent){ 
+  &.uk-card{
+    background-color: $given-bg;
+  }
+  .uk-card-title{
+    color: $given-accent;
+  }
+    p{
+      color: $lv-black;
+    }
+ }
+
+ .card-white-orange{
+    @include slider-style($lv-white,$orange-dark);
+ }
+ .card-brown-orange{
+  @include slider-style($brown-darkest,$orange-dark);
+}
+.card-red-white{
+  @include slider-style($red-dark,$lv-white);
+}
+.card-brown-white{
+  @include slider-style($brown-dark,$lv-white);
+}
+.card-green-white{
+  @include slider-style($green-dark,$lv-white);
+}
+
+@media (max-width: $breakpoint-medium){
+    .with-top-arrows .uk-slider [uk-slider-item=previous], .uk-slider [uk-slider-item=next] {
+    top: -22.5% !important;
+}
+}

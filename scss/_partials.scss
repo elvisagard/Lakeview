@@ -1,0 +1,119 @@
+
+
+/// RESPONSIVE TEXT SIZING ----------------------------
+
+@mixin rsp-text($sm: 0, $md: 0, $lg: 0, $xl: 0){
+
+    @if $sm !=0 {
+        @media (min-width: $breakpoint-small){
+            font-size: $sm;
+        }
+    }
+    @if $md !=0 {
+        @media (min-width: $breakpoint-small){
+            font-size: $md;
+        }
+    }
+    @if $lg !=0 {
+        @media (min-width: $breakpoint-small){
+            font-size: $lg;
+        }
+    }
+    @if $xl !=0 {
+        @media (min-width: $breakpoint-small){
+            font-size: $xl;
+        }
+    }
+    
+}
+//IMPLEMENTATION
+//@include rsp-text($sm: 0, $md: 0, $lg: 0, $xl: 0);
+
+
+/// RESPONSIVE LINE HEIGHT SIZING ---------------------
+
+@mixin rsp-line-height($sm: 0, $md: 0, $lg: 0, $xl: 0){
+
+    @if $sm !=0 {
+        @media (min-width: $breakpoint-small){
+            line-height: $sm;
+        }
+    }
+    @if $md !=0 {
+        @media (min-width: $breakpoint-small){
+            line-height: $md;
+        }
+    }
+    @if $lg !=0 {
+        @media (min-width: $breakpoint-small){
+            line-height: $lg;
+        }
+    }
+    @if $xl !=0 {
+        @media (min-width: $breakpoint-small){
+            line-height: $xl;
+        }
+    }
+    
+}
+//IMPLEMENTATION
+//@include rsp-text($sm: 0, $md: 0, $lg: 0, $xl: 0);
+
+
+
+/// Borders ----------------------------
+
+@mixin div($type, $color: $global-border){
+    $width: $global-border-width;
+    $type: solid;
+    
+    @if $type == "left" {
+        border-left: $width $type $color;
+    }
+    @if $type == "right" {
+        border-right: $width $type $color;
+    }
+    @if $type == "top" {
+        border-top: $width $type $color;
+    }
+    @if $type == "bottom" {
+        border-bottom: $width $type $color;
+    }
+    @if $type == "vertical" {
+        border-top: $width $type $color;
+        border-bottom: $width $type $color;
+    }
+    @if $type == "horizontal" {
+        border-left: $width $type $color;
+        border-right: $width $type $color;
+    }
+    @if $type == "responsive-left" {
+        @media (min-width: $breakpoint-medium){
+            border-left: $width $type $color;
+        }
+        @media(max-width: $breakpoint-small-max){
+            border-top: $width $type $color;
+        }
+    }
+    @if $type == "responsive-right" {
+        @media (min-width: $breakpoint-medium){
+            border-right: $width $type $color;
+        }
+        @media(max-width: $breakpoint-small-max){
+            border-bottom: $width $type $color;
+        }
+    }
+    @if $type == "responsive-horizontal" {
+        @media (min-width: $breakpoint-medium){
+            border-left: $width $type $color;
+            border-right: $width $type $color;
+        }
+        @media(max-width: $breakpoint-small-max){
+            border-top: $width $type $color;
+            border-bottom: $width $type $color;
+        }
+    }
+}
+//IMPLEMENTATION
+// @include div("top");
+// @include div("top",#ccc);

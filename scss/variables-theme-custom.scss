@@ -1,0 +1,45 @@
+// Enter original variables here
+
+$font-notosans: 'Noto Sans', Helvetica, Arial, sans-serif;
+$font-notomono: 'Noto Sans Mono', monospace;
+$font-notoserif: 'Noto Serif',Georgia,Times,'Times New Roman', serif;
+
+$taupe : hsl(40deg ,13% ,90%);
+$brown-darkest : hsl(35deg ,15%, 10%);
+
+$brown-mid : hsl(23deg ,10% ,46%);
+$brown-mid-active : hsla(23deg ,10% ,46%,0.6);
+$brown-mid-inactive : hsla(23deg ,10% ,46%,0.2);
+
+$brown-dark : hsl(35deg ,15%, 25%);
+$brown-dark-active : hsla(35deg ,15%, 25%,0.6);
+$brown-dark-inactive : hsla(35deg ,15%, 25%,0.2);
+
+
+$red-dark : hsl(0deg ,18% ,49%);
+$red-light : hsl(0deg ,18% ,85%);
+$red-dark-active : hsla(0deg ,18% ,49%,0.6);
+$red-dark-inactive : hsla(0deg ,18% ,49%,0.2);
+
+$orange-dark : hsl(35deg, 54% ,49%);
+$orange-light : hsl(35deg, 54% ,60%);
+$orange-lightest : hsl(35deg, 54% ,90%);
+$orange-dark-active : hsla(35deg, 54% ,49%,0.6);
+$orange-dark-inactive : hsla(35deg, 54% ,49%,0.2);
+
+
+$green-dark : hsl(167deg ,12% ,43%);
+$green-light : hsl(167deg ,12% ,80%);
+$green-dark-active : hsla(167deg ,12% ,43%,0.6);
+$green-dark-inactive : hsla(167deg ,12% ,43%,0.2);
+
+$lv-white : #fff;
+$lv-black : #000;
+
+$menu-item-color: rgba(255, 255, 255, 0.75);
+
+$one-seventh: calc(100vw / 7);
+
+// slider-navigation-position
+$top-slider-position-default: -14.5%;
+$top-slider-position-raised: calc($top-slider-position-default - 7%);

@@ -1,0 +1,109 @@
+
+
+//@font-face {font-family: 'Noah';font-weight: bold;font-style: italic;src: url('fonts/393B6D_0_0.eot');src: url('fonts/393B6D_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/393B6D_0_0.woff2') format('woff2'),url('fonts/393B6D_0_0.woff') format('woff'),url('fonts/393B6D_0_0.ttf') format('truetype'),url('fonts/393B6D_0_0.svg#wf') format('svg');}
+//@font-face {font-family: 'Noah';font-weight: normal;font-style: normal;src: url('fonts/393B6D_1_0.eot');src: url('fonts/393B6D_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/393B6D_1_0.woff2') format('woff2'),url('fonts/393B6D_1_0.woff') format('woff'),url('fonts/393B6D_1_0.ttf') format('truetype'),url('fonts/393B6D_1_0.svg#wf') format('svg');}
+//@font-face {font-family: 'Noah';font-weight: normal;font-style: italic;src: url('fonts/393B6D_2_0.eot');src: url('fonts/393B6D_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/393B6D_2_0.woff2') format('woff2'),url('fonts/393B6D_2_0.woff') format('woff'),url('fonts/393B6D_2_0.ttf') format('truetype'),url('fonts/393B6D_2_0.svg#wf') format('svg');}
+//@font-face {font-family: 'Noah';font-weight: bold;font-style: normal;src: url('fonts/393B6D_3_0.eot');src: url('fonts/393B6D_3_0.eot?#iefix') format('embedded-opentype'),url('fonts/393B6D_3_0.woff2') format('woff2'),url('fonts/393B6D_3_0.woff') format('woff'),url('fonts/393B6D_3_0.ttf') format('truetype'),url('fonts/393B6D_3_0.svg#wf') format('svg');}
+
+
+/* noto-serif-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/noto-serif-v21-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-serif-v21-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* noto-serif-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/noto-serif-v21-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-serif-v21-latin-italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* noto-serif-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/noto-serif-v21-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-serif-v21-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* noto-serif-700italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/noto-serif-v21-latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-serif-v21-latin-700italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* noto-sans-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/noto-sans-v27-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-sans-v27-latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* noto-sans-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/noto-sans-v27-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-sans-v27-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* noto-sans-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/noto-sans-v27-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-sans-v27-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* noto-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/noto-sans-v27-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-sans-v27-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* noto-sans-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/noto-sans-v27-latin-800.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-sans-v27-latin-800.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* noto-sans-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/noto-sans-v27-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-sans-v27-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* noto-sans-mono-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/noto-sans-mono-v21-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-sans-mono-v21-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }

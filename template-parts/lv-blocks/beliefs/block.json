@@ -1,0 +1,14 @@
+{
+    "name": "lv-beliefs",
+    "title": "Beliefs",
+    "description": "A custom component for displaying the beliefs of Lakeview SDA Church.",
+    "style": [ "file:./beliefs.css" ],
+    "category": "layout",
+    "icon": "network",
+    "keywords": ["belief", "fundamentals"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "./beliefs.php"
+    },
+    "align": "full"
+}

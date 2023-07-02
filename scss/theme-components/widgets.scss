@@ -1,0 +1,37 @@
+ul#sda-world{
+    padding: 0;
+    list-style: none;
+    & > *{
+        padding-left: 23px;
+    }
+    li{
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &::before{
+            content: "";
+            list-style-type: square;
+            position: relative;
+            left: -30px;
+            width: 30px;
+            height: 1.5em;
+            margin-bottom: -1.5em;
+            display: list-item;
+            list-style-position: inside;
+            text-align: right;
+            filter: invert(48%) sepia(66%) saturate(415%) hue-rotate(356deg) brightness(102%) contrast(93%);
+        }
+        a{
+            color: hsl(35, 15%, 25%);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+#sda-world > li > div > a::after{
+    //filter: invert(19%) sepia(3%) saturate(4078%) hue-rotate(357deg) brightness(98%) contrast(78%); // dark brown
+    filter: invert(48%) sepia(66%) saturate(415%) hue-rotate(356deg) brightness(102%) contrast(93%);
+}

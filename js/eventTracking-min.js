@@ -1,0 +1,1 @@
+function reportEvent(e){var t=jQuery(e).data("event-action")??"";if(""!==t){var n=jQuery(e).data("event-category")??"",a=jQuery(e).data("event-label")??"";gtag("event",t,{event_category:n,event_label:a})}}jQuery(document).ready((function(){jQuery.each(["click","inview"],(function(e,t){window.addEventListener(t,(function(e){reportEvent(e.target)}))}))}));

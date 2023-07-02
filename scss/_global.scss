@@ -1,0 +1,124 @@
+//Utilities
+.lv-taupe{color:$taupe};
+.lv-brown-darkest{color:$brown-darkest}
+.lv-brown-dark{color:$brown-dark}
+.lv-brown-mid{color:$brown-mid}
+.lv-red-dark{color:$red-dark}
+.lv-orange-dark{color:$orange-dark}
+.lv-orange-light{color:$orange-light}
+.lv-green-dark{color:$green-dark}
+.lv-text-white{color:$lv-white}
+.lv-text-black{color:$lv-black}
+
+.bg-green{background:$green-dark !important;}
+.bg-red{background:$red-dark !important;}
+.bg-brown-darkest{background:$brown-darkest}
+
+// Header grid
+// .header-grid{
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   grid-template-rows: auto;
+//   grid-template-areas: 
+//   "logo main-menu icon-menu"
+// }
+
+// .header-grid > .lv-nav-left {
+//   grid-area: logo;
+// }
+
+// .header-grid > .lv-nav-center {
+//   grid-area: main-menu;
+//   border-right: 2px dotted #e2e2e2;
+// }
+
+// .header-grid > .lv-nav-right, .lv-mobile-dropdown{
+//   grid-area: icon-menu;
+// }
+
+// .header-grid.uk-navbar{
+//   display: grid;
+// }
+
+
+.top-nav-arrows {
+  position: relative;
+}
+
+.lv-border-gray{
+    border: 1px solid #D3D3D3;
+}
+
+.gray-bg-image{
+    background-color: $brown-dark;
+    & img{
+        opacity:0.2;
+        filter:grayscale(1);
+    }
+}
+
+.light-header-text{
+    span.uk-label{
+        background: #fff;
+        color: $brown-dark;
+    }
+    h1.page-title{
+        color: #fff;
+    }
+}
+
+
+.gray-scale-opacity{
+    filter: grayscale(1);
+    opacity: 0.8; 
+}
+
+//@media (min-width: 782px){
+//.wp-block-columns {
+//    flex-wrap: wrap!important;
+//    }
+//}
+
+//#home-events{
+//    h2 + div > div{
+//        padding: 0rem 1rem 1rem 1rem;
+//    }
+//}
+
+//@media screen and (max-width: $breakpoint-small){
+//    .hero-slideshow .uk-slideshow-nav{
+//        display:none;
+//    }
+//}
+
+
+//@media screen and (min-width: $breakpoint-large){
+//    .ministry-header-text > div{
+//        padding-left: 0;
+//    }
+//}
+
+
+
+.frm_fields_container .frm_submit button.frm_button_submit{
+    background: $brown-dark;
+    border: none;
+    &:hover{
+        color:white;
+        filter: brightness(1.1);
+        background: $brown-dark;
+    }
+}
+
+.archive #view-content > article.uk-card{
+    & >div:nth-of-type(2){
+        display:flex;
+        align-items: center;
+        header > h2{
+            margin: auto;
+        }
+    }
+    [class^="uk-card-media"]{
+        border: 5px solid #fff;
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "lv-events",
+    "title": "Events",
+    "description": "A custom events block for Lakeview SDA Church.",
+    "style": [ "file:./events.css" ],
+    "category": "layout",
+    "icon": "calendar",
+    "keywords": ["events", "calendar"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "./events.php"
+    },
+    "align": "full"
+}

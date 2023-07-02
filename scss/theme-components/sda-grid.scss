@@ -1,0 +1,33 @@
+// Base SDA Grid System
+.sda-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "content content content content content content sabbath"
+    "footer footer footer footer footer footer sabbath";
+    height:100%;
+}
+
+.grid-content {
+    grid-area: content;
+  }
+
+.grid-sabbath {
+    grid-area: sabbath;
+    background: $orange-dark;
+    z-index: 1000;
+    &:hover{
+        background: hsl(35, 54%, 52%);
+        //filter: brightness(1.1);
+    }
+}
+
+.sda-logo {
+  height: auto;
+  width: calc($one-seventh / 2);
+  position: fixed;
+  top: 1rem;
+  right: calc($one-seventh / 2);
+  transform: translateX(50%);
+}

@@ -1,0 +1,46 @@
+.hero-slideshow::before {
+    overflow: hidden;
+    position: absolute;
+    width: 110%;
+    top: -5%;
+    left: 0;
+    content: "worship";
+    z-index: 0;
+    text-transform: uppercase;
+    font-family: "Noto Sans";
+    font-size: 20vw;
+    color: white;
+    opacity: 0.2;
+    margin-left: -2rem;
+}
+
+.hero-slideshow img{
+    filter:grayscale(1);
+}
+
+.hero-slideshow{
+    background-color: $brown-darkest !important;
+    h2{
+        font-family: "Noto Serif";
+        font-style: italic;
+        font-size: clamp(1.5rem,6vw,3rem);
+        width:  16ch;
+    }
+    h2 + p{
+        width: min(28ch,45vw);
+        @media (min-width: $breakpoint-small){
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+    }
+    img{
+        opacity:0.6;
+    }
+    h2 + p + a{
+        @extend .uk-button;
+        @extend .orange;
+        @extend .uk-margin;
+        border: 2px solid white !important;
+        
+    }
+}

@@ -1,0 +1,141 @@
+// Name:            Slider
+// Description:     Component to create horizontal sliders
+//
+// Component:       `uk-slider`
+//
+// Sub-objects:     `uk-slider-container`
+//                  `uk-slider-items`
+//
+// States:          `uk-active`
+//
+// ========================================================================
+
+
+
+// Hooks
+// ========================================================================
+
+@mixin hook-slider(){
+  .uk-card{
+    .uk-card-title, h1, h2, h3, h4, h5, h6, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6{
+        overflow: hidden;
+       text-overflow: ellipsis;
+       display: -webkit-box;
+       -webkit-line-clamp: 2; /* number of lines to show */
+               line-clamp: 2; 
+       -webkit-box-orient: vertical;
+    }
+  }
+
+  [uk-slider-item="previous"], [uk-slider-item="next"]{
+    position: absolute;
+    top: $top-slider-position-default;
+    @media (min-width: 1200px){top: $top-slider-position-raised;}
+    & svg *{
+      stroke-width: 3;
+    }
+  }
+
+  [uk-slider-item="previous"]{
+      right: 5%;
+  }
+
+  [uk-slider-item="next"]{
+      right: 0%;
+  }
+
+  .raise-navigation{
+      top: $top-slider-position-raised;
+  }
+}
+
+
+@mixin hook-slider-misc(){}
+
+
+
+// REFERENCE ---------------------------------------------------------------
+// -------------------------------------------------------------------------
+
+
+/* ========================================================================
+   Component: Slider
+ ========================================================================== */
+
+/*
+ * 1. Prevent tab highlighting on iOS.
+ */
+
+//.uk-slider {
+//    /* 1 */
+//    -webkit-tap-highlight-color: transparent;
+//    @if(mixin-exists(hook-slider)) {@include hook-slider();}
+//}
+//
+//
+///* Container
+// ========================================================================== */
+//
+///*
+// * 1. Clip child elements
+// */
+//
+//.uk-slider-container {
+//    /* 1 */
+//    overflow: hidden;
+//}
+//
+///* Items
+// ========================================================================== */
+//
+///*
+// * 1. Optimize animation
+// * 2. Create a containing block. In Safari it's neither created by `transform` nor `will-change`.
+// */
+//
+//.uk-slider-items {
+//    /* 1 */
+//    will-change: transform;
+//    /* 2 */
+//    position: relative;
+//}
+//
+///*
+// * 1. Reset list style without interfering with grid
+// * 2. Prevent displaying the callout information on iOS.
+// */
+//
+//.uk-slider-items:not(.uk-grid) {
+//    display: flex;
+//    /* 1 */
+//    margin: 0;
+//    padding: 0;
+//    list-style: none;
+//    /* 2 */
+//    -webkit-touch-callout: none;
+//}
+//
+//.uk-slider-items.uk-grid { flex-wrap: nowrap; }
+//
+//
+///* Item
+// ========================================================================== */
+//
+///*
+// * 1. Let items take content dimensions (0 0 auto)
+// * 2. Create position context
+// * 3. Disable horizontal panning gestures in IE11 and Edge
+// * 4. Suppress outline on focus
+// */
+//
+//.uk-slider-items > * {
+//    /* 1 */
+//    flex: none;
+//    /* 2 */
+//    position: relative;
+//    /* 3 */
+//    touch-action: pan-y;
+//}
+//
+///* 4 */
+//.uk-slider-items > :focus { outline: none; }

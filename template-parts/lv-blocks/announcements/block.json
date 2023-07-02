@@ -1,0 +1,14 @@
+{
+    "name": "lv-announcements",
+    "title": "Announcements",
+    "description": "A custom announcements block for Lakeviw SDA Church.",
+    "style": [ "file:./announcements.css" ],
+    "category": "layout",
+    "icon": "megaphone",
+    "keywords": ["announcement", "news"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "./announcements.php"
+    },
+    "align": "full"
+}

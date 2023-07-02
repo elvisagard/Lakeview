@@ -1,0 +1,15 @@
+
+ul[id^="news-block"] li{
+    font-weight: 400;
+    width: min(230px,50vw);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    a{
+        color: hsl(35, 15%, 25%);
+    }
+}
+
+ul[id^="news-block"] li a{
+    color: hsl(35, 15%, 25%);
+}

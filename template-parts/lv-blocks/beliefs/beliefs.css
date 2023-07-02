@@ -1,0 +1,47 @@
+article[id^="lv-events"]{
+    .em-item-info{
+        margin: -5px 0 0 7px;
+    }
+    .em-event.em-item{
+        margin-bottom:3px;
+        display: flex;
+        align-items: center;
+        & *{
+            line-height: 1;
+        }
+    }
+    .em-item-image-placeholder{
+        display:flex;
+        justify-content: center;
+    }
+    .date{
+        display: flex;
+        justify-content: center;
+        .day{
+            order:2;
+            margin-left:5px;
+        }
+    }
+    .em-event-meta.em-item-meta,.em-item-desc,.em-item-actions.input{
+        display:none;
+    }
+    h3.em-item-title{
+        font-family: $font-notoserif;
+        margin:0;
+        //width: clamp(10ch,13vw,30ch);
+        width: min(230px,50vw);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        & > a{
+        font-size:1rem;
+        font-weight:400;   
+    }
+    }
+}
+
+.show-events-button{display:none;}
+@media (min-width: 782px) and (max-width: $breakpoint-large){
+    .hide-events{display:none !important;}
+    .show-events-button {display:flex;}
+}

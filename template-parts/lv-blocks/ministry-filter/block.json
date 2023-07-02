@@ -1,0 +1,14 @@
+{
+    "name": "lv-ministry-filter",
+    "title": "Ministry Filter",
+    "description": "A custom filter block for Lakeview SDA Church.",
+    "style": [ "file:./min-filter.css" ],
+    "category": "layout",
+    "icon": "filter",
+    "keywords": ["ministry", "filter"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "./min-filter.php"
+    },
+    "align": "full"
+}

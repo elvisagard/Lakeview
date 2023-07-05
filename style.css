@@ -480,20 +480,20 @@ article[id^=lv-events] h3.em-item-title > a {
   border: 1px solid #fff;
 }
 
-#site-navigation .more-menu > a > svg > circle {
+#site-navigation .more-menu > button > svg > circle {
   transition: transform 0.075s ease-out;
   transform-origin: center;
 }
 
-#site-navigation .more-menu:hover > a > svg > circle:nth-child(1) {
+#site-navigation .more-menu:hover > button > svg > circle:nth-child(1) {
   transform: translate(8px, 14px);
 }
 
-#site-navigation .more-menu:hover > a > svg > circle:nth-child(2) {
+#site-navigation .more-menu:hover > button > svg > circle:nth-child(2) {
   transform: translate(-8px, 7px);
 }
 
-#site-navigation .more-menu:hover > a > svg > circle:nth-child(3) {
+#site-navigation .more-menu:hover > button > svg > circle:nth-child(3) {
   transform: translate(0px, -14px);
 }
 
@@ -7521,7 +7521,7 @@ ul.uk-nav-sub {
  * 4. Style
  * 5. Required for `a` if there is still some text
  */
-.uk-iconnav > * > a {
+.uk-iconnav > * > a, .uk-iconnav > * > button {
   /* 1 */
   display: flex;
   align-items: center;

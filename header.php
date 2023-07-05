@@ -52,10 +52,25 @@
                <?php //PPX-HEAD 2.1 DESKTOP NAV ?>
                <div class="lv-nav-rightt uk-navbar-right uk-visible@l ">
                     <ul class="uk-iconnav">
-                            <li class="uk-flex uk-flex-center uk-flex-middle"><a href="#" uk-icon="icon: facebook; ratio: 1.1" uk-tooltip="title: Facebook"></a></li>
-                            <li class="uk-flex uk-flex-center uk-flex-middle"><a href="#" uk-icon="icon: calendar; ratio: 1.1" uk-tooltip="title: Events Calendar"></a></li>
-                            <li class="uk-flex uk-flex-center uk-flex-middle"><a href="#" uk-icon="icon: user; ratio: 1.1" uk-tooltip="title: Login"></a></li>
-                            <li class="uk-flex uk-flex-center uk-flex-middle more-menu"><a href="#" uk-icon="icon: more-vertical; ratio: 1.1" uk-tooltip="title: More Menus"></a></li>
+                        <li class="uk-flex uk-flex-center uk-flex-middle"><a href="#" uk-icon="icon: facebook; ratio: 1.1" uk-tooltip="title: Facebook"></a></li>
+                        <li class="uk-flex uk-flex-center uk-flex-middle"><a href="/full-calendar/" uk-icon="icon: calendar; ratio: 1.1" uk-tooltip="title: Events Calendar"></a></li>
+                        <li class="uk-flex uk-flex-center uk-flex-middle"><a href="#" uk-icon="icon: user; ratio: 1.1" uk-tooltip="title: Login"></a></li>
+                        <li class="uk-flex uk-flex-center uk-flex-middle more-menu uk-inline">
+                            <button uk-icon="icon: more-vertical; ratio: 1.1" uk-tooltip="title: More Menus"></button>
+                            <div uk-dropdown="mode: hover; pos: bottom-center">
+                                
+                                <?php
+                                wp_nav_menu( array(
+                                    'theme_location'    => 'menu-dots-desktop',
+                                    'menu_id'           => 'dots-menu',
+                                    'menu_class'        => 'uk-nav uk-dropdown-nav bottom-center',
+                                    'container'         => 'div',
+                                    'container_class'   => 'uk-visible@l',
+                                ) );
+                                ?>
+        
+                            </div>
+                        </li>
                     </ul>
                     <button class="uk-button uk-margin-medium-left uk-border-pill orange lv-pill-sm">GIVE</button>
                 </div>

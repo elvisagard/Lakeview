@@ -27,17 +27,17 @@
 }
 
 // "More Menus" Animation
-#site-navigation .more-menu > a > svg > circle {
+#site-navigation .more-menu > button > svg > circle {
    transition: transform .075s ease-out;
    transform-origin: center;
 }
-#site-navigation .more-menu:hover > a > svg > circle:nth-child(1){
+#site-navigation .more-menu:hover > button > svg > circle:nth-child(1){
   transform:translate(8px , 14px);
 }
-#site-navigation .more-menu:hover > a > svg > circle:nth-child(2){
+#site-navigation .more-menu:hover > button > svg > circle:nth-child(2){
   transform:translate(-8px , 7px);
 }
-#site-navigation .more-menu:hover > a > svg > circle:nth-child(3){
+#site-navigation .more-menu:hover > button > svg > circle:nth-child(3){
   transform:translate(0px , -14px);
 }
 

@@ -50,6 +50,7 @@ if ( ! function_exists( 'ppx_starter_setup' ) ) :
             'menu-primary-mobile' => esc_html__( 'Primary Mobile', 'lv-base' ), // Register Mobile Nav Menu
             'menu-footer-desktop' => esc_html__( 'Footer Desktop', 'lv-base' ), // Register Desktop Footer Menu
             'menu-footer-mobile' => esc_html__( 'Footer Mobile', 'lv-base' ), // Register Mobile Footer Menu
+            'menu-dots-desktop' => esc_html__( 'Dots Desktop', 'lv-base' ), // Register Dots Desktop Menu
 		) );
        
 

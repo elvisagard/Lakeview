@@ -131,7 +131,7 @@ if ( ! function_exists( 'ppx_get_card' ) ) :
             </div>
         </div>
 
-        <?
+        <?php
     }
 	
-endif;
+endif; ?>

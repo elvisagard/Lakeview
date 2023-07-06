@@ -47,7 +47,7 @@ $ministries = get_posts( $args );
 
 
 <?php if ($ministries) : ?>
-    <article id="<? echo esc_attr($block_id); ?>" class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid-small <?php echo esc_attr($block_cls); ?>" uk-grid>
+    <article id="<?php echo esc_attr($block_id); ?>" class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid-small <?php echo esc_attr($block_cls); ?>" uk-grid>
         <?php foreach ( $ministries as $ministry ) : setup_postdata( $ministry ); ?>
             <div class="uk-light">
                 <a href="<?php echo $ministry->guid; ?>"><h5 class="uk-card uk-card-default uk-card-body"><?php echo  $ministry->post_title; ?></h5></a>

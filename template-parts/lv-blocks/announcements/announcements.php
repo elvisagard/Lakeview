@@ -41,7 +41,7 @@ $news = get_posts( $args );
 ?>
 
 <?php if ($news) : ?>
-  <ul id="<? echo esc_attr($block_id); ?>" class="hide-news uk-list uk-list-square uk-list-primary uk-list-divider uk-list-collapse <?php echo esc_attr($block_cls); ?>">
+  <ul id="<?php echo esc_attr($block_id); ?>" class="hide-news uk-list uk-list-square uk-list-primary uk-list-divider uk-list-collapse <?php echo esc_attr($block_cls); ?>">
     <?php foreach ( $news as $article ) : setup_postdata( $article ); ?>
       <li><a href="<?php echo $article->guid; ?>"><?php echo  $article->post_title; ?></a></li>
     <?php endforeach; wp_reset_postdata(); ?>

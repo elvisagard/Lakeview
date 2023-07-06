@@ -165,9 +165,9 @@ if( $type="products" ){
 ?>
 
 
-<div id="<? echo esc_attr($block_id); ?>" class="uk-card <? echo esc_attr($block_cls) ?>" <? echo $block_attr; ?> uk-grid>
+<div id="<?php echo esc_attr($block_id); ?>" class="uk-card <?php echo esc_attr($block_cls) ?>" <?php echo $block_attr; ?> uk-grid>
     
-    <div class=" <? echo esc_attr($media_ca['cls']); ?>" <? echo $media_ca['attr']; ?> >
+    <div class=" <?php echo esc_attr($media_ca['cls']); ?>" <?php echo $media_ca['attr']; ?> >
         
        <?php 
         if( $thumbnail_url ){
@@ -190,42 +190,42 @@ if( $type="products" ){
         <div class="uk-card-body">
             
             <?php if( $badge_text ):?>
-                <div style="position: static;"  class="uk-card-badge uk-label <? echo esc_attr($badge_ca['cls']); ?>" <? echo $badge_ca['attr']; ?>><? echo $badge_text ?></div>
+                <div style="position: static;"  class="uk-card-badge uk-label <?php echo esc_attr($badge_ca['cls']); ?>" <?php echo $badge_ca['attr']; ?>><?php echo $badge_text ?></div>
             <?php endif; ?>
             
             <?php if( $date ):?>
-                <p class="<? echo esc_attr($date_ca['cls']); ?>" <? echo $date_ca['attr']; ?>><? echo $date ?></p>
+                <p class="<?php echo esc_attr($date_ca['cls']); ?>" <?php echo $date_ca['attr']; ?>><?php echo $date ?></p>
             <?php endif; ?>
             
             <?php if( $title ):?>
-                <h2 class="<? echo esc_attr($title_ca['cls']); ?>" <? echo $title_ca['attr']; ?>><? echo $title ?></h2>
+                <h2 class="<?php echo esc_attr($title_ca['cls']); ?>" <?php echo $title_ca['attr']; ?>><?php echo $title ?></h2>
             <?php endif; ?>
             
             <?php if( $old_price_price || $new_price_price ):?>
-                <div class="<? echo esc_attr($price_ca['cls']); ?> uk-grid-small" <? echo $price_ca['attr']; ?> uk-grid>
-                    <p style="text-decoration: line-through;"><? echo $old_price_price ?></p>
-                    <p><? echo $new_price_price ?></p>
+                <div class="<?php echo esc_attr($price_ca['cls']); ?> uk-grid-small" <?php echo $price_ca['attr']; ?> uk-grid>
+                    <p style="text-decoration: line-through;"><?php echo $old_price_price ?></p>
+                    <p><?php echo $new_price_price ?></p>
                 </div>
             <?php endif; ?>
             
             <?php if( $excerpt ):?>
-                <p class="<? echo esc_attr($excerpt_ca['cls']); ?>" <? echo $excerpt_ca['attr']; ?>><? echo $excerpt ?></p>
+                <p class="<?php echo esc_attr($excerpt_ca['cls']); ?>" <?php echo $excerpt_ca['attr']; ?>><?php echo $excerpt ?></p>
             <?php endif; ?>
             
         </div>
 
-        <div class="uk-card-footer <? echo esc_attr($footer_ca['cls']); ?>" <? echo $footer_ca['attr']; ?> >
+        <div class="uk-card-footer <?php echo esc_attr($footer_ca['cls']); ?>" <?php echo $footer_ca['attr']; ?> >
             
             <?php if( $tag_name_array ):?>
-                <div class="uk-grid-small <? echo esc_attr($ctw_ca['cls']); ?>" <? echo $ctw_ca['attr']; ?> uk-grid>
+                <div class="uk-grid-small <?php echo esc_attr($ctw_ca['cls']); ?>" <?php echo $ctw_ca['attr']; ?> uk-grid>
                     
                     <?php if( $cat ):?>
-                        <p class="<? echo esc_attr($cat_ca['cls']); ?>" <? echo $cat_ca['attr']; ?> ><? echo $cat['label'] ?></p>
+                        <p class="<?php echo esc_attr($cat_ca['cls']); ?>" <?php echo $cat_ca['attr']; ?> ><?php echo $cat['label'] ?></p>
                     <?php endif; ?>
                     
                     <?php foreach($tag_name_array as $tag):?>
                         <div>
-                            <p class="<? echo esc_attr($tags_ca['cls']); ?>" <? echo $tags_ca['attr']; ?> ><? echo $tag ?></p>
+                            <p class="<?php echo esc_attr($tags_ca['cls']); ?>" <?php echo $tags_ca['attr']; ?> ><?php echo $tag ?></p>
                         </div>                
                     <?php endforeach; ?>
                     
@@ -233,7 +233,7 @@ if( $type="products" ){
             <?php endif; ?>
 
             <?php if( $button_text ):?>
-                <a href="<? echo esc_url($button_url); ?>" class="uk-button <? echo esc_attr($button_cls); ?>" <? echo $button_attr; ?>><? echo esc_html($button_text); ?></a>
+                <a href="<?php echo esc_url($button_url); ?>" class="uk-button <?php echo esc_attr($button_cls); ?>" <?php echo $button_attr; ?>><?php echo esc_html($button_text); ?></a>
             <?php endif; ?>
             
         </div>

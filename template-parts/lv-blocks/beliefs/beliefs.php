@@ -24,7 +24,7 @@ $beliefs = get_posts( $args );
 
 <?php if ($beliefs) : ?>
 
-    <ul id="<? echo esc_attr($block_id); ?>" class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center uk-grid-small uk-grid-match <?php echo esc_attr($block_cls); ?>" uk-grid>
+    <ul id="<?php echo esc_attr($block_id); ?>" class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center uk-grid-small uk-grid-match <?php echo esc_attr($block_cls); ?>" uk-grid>
 
         <?php foreach ( $beliefs as $belief ) : setup_postdata( $belief ); ?>
 

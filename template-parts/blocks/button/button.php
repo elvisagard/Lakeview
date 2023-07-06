@@ -24,7 +24,7 @@ $url = get_field('url') ?: $empty;
 
 <?php if( $text && $url && $element == 'anchor' ):?>
     <a 
-       id="<? echo esc_attr($block_id); ?>" 
+       id="<?php echo esc_attr($block_id); ?>" 
        class="uk-button <?php echo esc_attr($block_cls) ?> <?php echo esc_attr($style) ?> <?php echo esc_attr($size) ?>" href="<?php echo esc_url($url) ?>" 
        <?php echo $block_attr ?> 
         >
@@ -34,7 +34,7 @@ $url = get_field('url') ?: $empty;
 
 <?php if( $text && $element == 'button' ):?>
     <button 
-        id="<? echo esc_attr($block_id); ?>" 
+        id="<?php echo esc_attr($block_id); ?>" 
         class="uk-button <?php echo esc_attr($block_cls) ?> <?php echo esc_attr($style) ?> <?php echo esc_attr($size) ?>"  
         <?php echo $block_attr ?> <?php echo $disable ?> 
         >

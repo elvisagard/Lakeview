@@ -31,7 +31,7 @@ $args = array(
 ?>
 
 <?php if (class_exists('EM_Events')) : ?>
-  <article id="<? echo esc_attr($block_id); ?>" class="uk-height-small uk-width-1-1<?php echo esc_attr($block_cls); ?>">
+  <article id="<?php echo esc_attr($block_id); ?>" class="uk-height-small uk-width-1-1<?php echo esc_attr($block_cls); ?>">
       
       <div class="hide-events">
         <?php 

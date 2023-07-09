@@ -32,6 +32,7 @@ $args = array(
 
 <?php if (class_exists('EM_Events')) : ?>
   <article id="<?php echo esc_attr($block_id); ?>" class="uk-height-small uk-width-1-1<?php echo esc_attr($block_cls); ?>">
+      <h3><?php echo $category_name ?></h3>
       
       <div class="hide-events">
         <?php 

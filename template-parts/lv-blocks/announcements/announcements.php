@@ -19,25 +19,6 @@ $args = array(
 );
 $news = get_posts( $args );
 
-
-
-//$args2 = array(
-//  'numberposts' => 5,
-//  'post_type'   => 'event',
-//  'order'       => 'DES',
-//  'orderby'     => 'date'
-//);
-//$events = get_posts( $args2 );
-//var_dump($events);
-
-
-//if ( class_exists('EM_Events') ) {
-//    echo EM_Events::output( array('limit' => 10,'orderby' => 'name') );
-//}
-
-//var_dump(em_get_events( array( 'category' => 'community-service' ) ));
-//print_r(em_get_events( array( 'category' => 'community-service' ) ));
-
 ?>
 
 <?php if ($news) : ?>

@@ -27,7 +27,7 @@ $ppx_contentWidth = is_active_sidebar( 'sidebar-1' ) ? wp_cache_get('ppx_content
          
 <main id="main">
 
-    <div id="post-<?php the_ID(); ?>" class="<?php post_class(); ?>">
+    <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <?php
         the_content( sprintf(

@@ -40,7 +40,7 @@ if(is_active_sidebar( 'sidebar-1' ) && $using_sidebar){
             <main id="main" class="<?php echo $ppx_contentWidth; ?>">
 
 
-                <div id="post-<?php the_ID(); ?>" class=" <?php post_class(); ?>">
+                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 
                     <div>
                             <?php

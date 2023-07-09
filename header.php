@@ -54,7 +54,7 @@
                     <ul class="uk-iconnav">
                         <li class="uk-flex uk-flex-center uk-flex-middle"><a href="#" uk-icon="icon: facebook; ratio: 1.1" uk-tooltip="title: Facebook"></a></li>
                         <li class="uk-flex uk-flex-center uk-flex-middle"><a href="/full-calendar/" uk-icon="icon: calendar; ratio: 1.1" uk-tooltip="title: Events Calendar"></a></li>
-                        <li class="uk-flex uk-flex-center uk-flex-middle"><a href="#" uk-icon="icon: user; ratio: 1.1" uk-tooltip="title: Login"></a></li>
+                        <li class="uk-flex uk-flex-center uk-flex-middle"><a href="<?php echo esc_url( wp_login_url( get_permalink() ) ); ?>" uk-icon="icon: user; ratio: 1.1" uk-tooltip="title: Login"></a></li>
                         <li class="uk-flex uk-flex-center uk-flex-middle more-menu uk-inline">
                             <button uk-icon="icon: more-vertical; ratio: 1.1" uk-tooltip="title: More Menus"></button>
                             <div uk-dropdown="mode: hover; pos: bottom-center">
@@ -72,7 +72,7 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="uk-button uk-margin-medium-left uk-border-pill orange lv-pill-sm">GIVE</button>
+                    <a href="https://adventistgiving.org/donate/ANTFLD" class="uk-button uk-margin-medium-left uk-border-pill orange lv-pill-sm">GIVE</a>
                 </div>
 
                 <!--Side Menu Toggle -->

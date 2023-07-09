@@ -15,6 +15,8 @@ if($include_homepage){
 $check = in_array(get_the_ID(), $page_ids_array);
 
 $hide_the_header = $check ? $hide_the_header = 'display:none' : $hide_the_header = 'display:block';
+
+$thumb_id = get_post_thumbnail_id() ? get_post_thumbnail_id() : false;
     
 ?>
 
@@ -23,7 +25,7 @@ $hide_the_header = $check ? $hide_the_header = 'display:none' : $hide_the_header
   
     <div class="uk-container">
    
-        <div class="uk-padding-large uk-padding-remove-horizontal">
+        <div class="uk-padding-large uk-padding-remove-horizontal <?php if(! $thumb_id): ?> uk-padding-remove-bottom <?php endif; ?>">
              <?php
             ppx_category_single();
              if(is_archive()):
@@ -40,14 +42,13 @@ $hide_the_header = $check ? $hide_the_header = 'display:none' : $hide_the_header
      </div>
    
     <?php
-        $thumb_id = get_post_thumbnail_id() ? get_post_thumbnail_id() : false;
-        if(get_post_thumbnail_id()):
+        // if(get_post_thumbnail_id()):
     ?>
 
-        <div class="uk-cover-container uk-height-medium">
-        <?php echo get_img(get_post_thumbnail_id(), 'xl', '', 'uk-cover'); ?>
-        </div>
-    <?php endif; ?>
+<!--        <div class="uk-cover-container uk-height-medium">-->
+        <?php // echo get_img(get_post_thumbnail_id(), 'xl', '', 'uk-cover'); ?>
+<!--        </div>-->
+    <?php // endif; ?>
 
 </header><!-- .page-header -->
 

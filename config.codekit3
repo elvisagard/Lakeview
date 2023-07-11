@@ -4540,6 +4540,14 @@
       "oAP" : "\/single-ministry.php",
       "oF" : 0
     },
+    "\/single-news.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/single-news.php",
+      "oF" : 0
+    },
     "\/single.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4810,6 +4818,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/blocks\/video\/video.php",
+      "oF" : 0
+    },
+    "\/template-parts\/builder-news.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/builder-news.php",
       "oF" : 0
     },
     "\/template-parts\/builder.php" : {

@@ -758,6 +758,10 @@ h2.section-title + .ppx-button, h2 + .ppx-button {
     top: -22.5% !important;
   }
 }
+mini-card-width {
+  width: 324px;
+}
+
 .card-white-orange.uk-card {
   background-color: #fff;
 }
@@ -813,6 +817,10 @@ h2.section-title + .ppx-button, h2 + .ppx-button {
     top: -22.5% !important;
   }
 }
+mini-card-width {
+  width: 324px;
+}
+
 #show-ministries li.gray-bg-image {
   background-color: transparent !important;
 }

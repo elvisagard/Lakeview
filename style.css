@@ -502,22 +502,6 @@ article[id^=lv-events] h3.em-item-title > a {
     padding: 0;
   }
 }
-.hero-slideshow::before {
-  overflow: hidden;
-  position: absolute;
-  width: 110%;
-  top: -5%;
-  left: 0;
-  content: "worship";
-  z-index: 0;
-  text-transform: uppercase;
-  font-family: "Noto Sans";
-  font-size: 20vw;
-  color: white;
-  opacity: 0.2;
-  margin-left: -2rem;
-}
-
 .hero-slideshow img {
   filter: grayscale(1);
 }

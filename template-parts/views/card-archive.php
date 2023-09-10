@@ -40,7 +40,7 @@ class cardArchiveView extends viewBase
             the_post();  
             $thumbnail_class = get_post_thumbnail_id() ? 'uk-grid-collapse uk-child-width-expand@s uk-margin uk-grid' : ''; ?>
 	
-	<article id="post-<?php the_ID(); ?>" <?php post_class('uk-card uk-card-default uk-padding uk-background-primary uk-light uk-border-rounded '.$thumbnail_class.''); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class('uk-card uk-card-default uk-margin uk-padding uk-background-primary uk-light uk-border-rounded '.$thumbnail_class.''); ?>>
 	
         <?php if(has_post_thumbnail() ): ?>
         <div class="uk-card-media-right uk-border-rounded uk-flex-last@s uk-cover-container uk-width-2-5@s">

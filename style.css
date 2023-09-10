@@ -240,6 +240,10 @@ Text Domain: customtheme
   border: 5px solid #fff;
 }
 
+#sidebar-output .em.em-calendar.size-small .em-cal-nav .month input {
+  font-size: 100% !important;
+}
+
 /* ========================================================================
    Component: Button
  ========================================================================== */

@@ -94,6 +94,18 @@ $ppx_contentWidth = is_active_sidebar( 'sidebar-1' ) ? wp_cache_get('ppx_content
             <!--footer -->
 
         </article><!-- #post-<?php the_ID(); ?> -->
+        
+        <h4 class="uk-margin-remove-top">Related Categories</h4>
+        <div class="uk-flex uk-flex-column uk-margin-large-bottom">
+            <?php 
+            $categories = wp_get_post_terms( $post->ID, 'news-category' );
+            foreach($categories as $category){
+               $cat_link = get_term_link($category);
+               echo '<a href="'.$cat_link.'">'.$category->name.'</a>'; // category link
+            }
+             ?>
+        </div>
+
     </div>
 
 

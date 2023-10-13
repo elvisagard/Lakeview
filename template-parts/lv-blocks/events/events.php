@@ -19,7 +19,7 @@ $block_cls .= $space . $color;
 $args = array(
     'limit' => $quan,
     'orderby' => 'date',
-    'order'       => 'DES',
+    'order'   => 'DES',
     'category' => $category
 );
 

@@ -324,3 +324,4 @@ function fouc_protect_against () {
 
 }
 
+add_filter( 'jetpack_offline_mode', '__return_false' );
